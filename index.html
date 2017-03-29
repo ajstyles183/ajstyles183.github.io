@@ -387,7 +387,7 @@ a#fdbk_close {
     <div id="comment-add-explanation" style="display:none; margin-left:140px;">Drag and drop "comment" somewhere then double-click comment area to add text to it. Comment areas can be resized. You should save frame in edit mode after adding comments (<span id="hide-comment-add-explanation" style="color:blue; cursor:pointer;">hide this note</span>)</div>
     <div id="WORKSPACE">
         
-        <div id="TOOLBAR" class="panel_border ui-draggable" style="top: 0px; left: 0px; z-index: 9000;">
+<div id="TOOLBAR" class="panel_border ui-draggable" style="top: 0px; left: 0px; z-index: 9000;">
             <div class="sidebarbox">
                 <p align="center"><a href="http://framebox.org/" title="New frame" class="whitebutton">New frame</a></p>
                 <p class="toolbarswitch">
@@ -396,7 +396,87 @@ a#fdbk_close {
                         <option value="eac">Enable &amp; Click</option>
                     </select>
                 </p>
-            <div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="BOX" aria-disabled="false" style="background-image: url(&quot;/static/images/box.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Box</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="TEXT" aria-disabled="false" style="background-image: url(&quot;/static/images/text.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Text</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="HEADER" aria-disabled="false" style="background-image: url(&quot;/static/images/header.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Text Header</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="TEXTBOX" aria-disabled="false" style="background-image: url(&quot;/static/images/textbox.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Text Box</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="LINK" aria-disabled="false" style="background-image: url(&quot;/static/images/link.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Text Link</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="BUTTON" aria-disabled="false" style="background-image: url(&quot;/static/images/button.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Button</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="INPUT" aria-disabled="false" style="background-image: url(&quot;/static/images/input.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Text Input</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="TEXTAREA" aria-disabled="false" style="background-image: url(&quot;/static/images/textarea.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Text Area</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="RADIO" aria-disabled="false" style="background-image: url(&quot;/static/images/radio.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Radio Input</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="CHECKBOX" aria-disabled="false" style="background-image: url(&quot;/static/images/checkbox.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Checkbox</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="SELECT" aria-disabled="false" style="background-image: url(&quot;/static/images/select.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Select</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="HLINE" aria-disabled="false" style="background-image: url(&quot;/static/images/hline.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Horizontal Line</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="VLINE" aria-disabled="false" style="background-image: url(&quot;/static/images/vline.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Vertical Line</p></div><div class="toolcover"><div class="toolmargin"><div class="TOOL ui-draggable" id="IMAGE" aria-disabled="false" style="background-image: url(&quot;/static/images/image.png&quot;); width: 36px; height: 36px; cursor: move;"></div></div><p>Image</p></div></div>
+            <div class="toolcover">
+			<div class="toolmargin"> 
+			<div class="TOOL ui-draggable" id="BOX" style="background-image: url(box.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Box</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin">
+			<div class="TOOL ui-draggable" id="TEXT" style="background-image: url(text.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Text</p></div>
+			
+			<div class="toolcover">
+			<div class="toolmargin"><div class="TOOL ui-draggable" id="HEADER" style="background-image: url(header.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Text Header</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin"><div class="TOOL ui-draggable" id="TEXTBOX" style="background-image: url(textbox.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Text Box</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin">
+			<div class="TOOL ui-draggable" id="LINK" style="background-image: url(link.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Text Link</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin">
+			<div class="TOOL ui-draggable" id="BUTTON" style="background-image: url(button.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Button</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin">
+			<div class="TOOL ui-draggable" id="INPUT" style="background-image: url(input.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Text Input</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin">
+			<div class="TOOL ui-draggable" id="TEXTAREA" style="background-image: url(textarea.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Text Area</p>
+			</div>
+			
+			<div class="toolcover"
+			><div class="toolmargin">
+			<div class="TOOL ui-draggable" id="RADIO" style="background-image: url(radio.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Radio Input</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin"><div class="TOOL ui-draggable" id="CHECKBOX" style="background-image: url(checkbox.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Checkbox</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin">
+			<div class="TOOL ui-draggable" id="SELECT" style="background-image: url(select.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Select</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin">
+			<div class="TOOL ui-draggable" id="HLINE" style="background-image: url(hline.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Horizontal Line</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin">
+			<div class="TOOL ui-draggable" id="VLINE" style="background-image: url(vline.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Vertical Line</p>
+			</div>
+			
+			<div class="toolcover">
+			<div class="toolmargin">
+			<div class="TOOL ui-draggable" id="IMAGE" style="background-image: url(image.png); width: 36px; height: 36px; cursor: move;" aria-disabled="false"></div></div>
+			<p>Image</p>
+			</div>
+			
+			</div>
         </div>
         
         <div id="REVISIONS" class="panel_border ui-draggable" style="top: 450px; left: 0px; z-index: 8998;">
