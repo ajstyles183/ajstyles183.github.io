@@ -80,7 +80,7 @@ function initPremiumTools() {
 
 
 function initUserStatus(callback) {
-    $.get("s/usercheck/default.htm", function(response) {
+    $.get("/s/usercheck/", function(response) {
             window.USER_FEATURES = response[0] || [];
             window.USER_IS_LOGGED_IN = response[1];
             initPremiumTools();

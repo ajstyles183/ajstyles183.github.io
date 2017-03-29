@@ -5,7 +5,7 @@
             var n = c.parent();
             if(n.attr('data-logged-in')=='true') {
                 $.ajax({
-                    url: 'o/subscribe/default.htm',
+                    url: '/o/subscribe/',
                     dataType: "json",
                     data: {question: 1},
                     type: 'POST',
@@ -21,7 +21,7 @@
                 $('.js-se').click(function() {
                     var e = $(this).parent().find('input').val();
                     $.ajax({
-                        url: 'o/subscribe/default.htm',
+                        url: '/o/subscribe/',
                         dataType: "json",
                         data: {email: e, question: 1},
                         type: 'POST',
